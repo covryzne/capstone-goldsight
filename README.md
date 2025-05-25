@@ -9,7 +9,7 @@ Proyek ini dibikin sama tim **Laskar AI** buat Capstone Project
 - **Analisis Pasar**: Grafik interaktif buat lihat tren harga dan volume perdagangan emas sejak 2000.
 - **Dashboard Gampang**: Antarmuka yang gampang dipake buat eksplor data dan prediksi.
 - **Edukasi & FAQ**: Info soal investasi emas dan cara kerja model prediksi.
-- **Login Simpel**: Masuk pake nama, plus fitur logout buat keluar kapan aja.
+- **Feedback**: Feedback.
 
 ## Teknologi yang Dipake
 - **Streamlit**: Buat bikin aplikasi web yang interaktif.
