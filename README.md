@@ -105,5 +105,5 @@ Kami seneng banget kalau lo mau bantu! Fork repo ini, bikin pull request, atau k
 Proyek ini pake [MIT License](LICENSE).
 
 ---
-Dibikin sama **Laskar AI** – Dicoding: @shendyeff
-tambahin id dicoding kalian gais
+Dibikin sama **Laskar AI** – Dicoding: @shendyeff @johanadisantoso
+
