@@ -1,9 +1,9 @@
 # GoldSight: Navigasi Cerdas Investasi Emas
-## C242-PS017
+## LAI25-SM048
 ### Team Members
-* [active] A200YBF237 – Johanadi Santoso – Universitas Diponegoro
-* [active] A327YBF437 – Riyan Zaenal Arifin  – Universitas Teknologi Yogyakarta
-* [active] A463YBM456 – Shendi Teuku Maulana Efendi – Universitas PGRI Madiun
+* A200YBF237 – Johanadi Santoso – Universitas Diponegoro - [Aktif]
+* A327YBF437 – Riyan Zaenal Arifin  – Universitas Teknologi Yogyakarta - [Aktif]
+* A463YBM456 – Shendi Teuku Maulana Efendi – Universitas PGRI Madiun - [Aktif]
 * A278XAM502 – Wulandari – Universitas Negeri Makassar - [Aktif]
 ---
 
