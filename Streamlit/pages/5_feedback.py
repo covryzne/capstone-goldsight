@@ -53,8 +53,8 @@ def main():
                 
                 # Tampilin feedback di UI
                 st.success("Terima kasih atas umpan balik Anda!")
-                st.write("**Feedback Anda:**")
-                st.json(feedback_data)
+                # st.write("**Feedback Anda:**")
+                # st.json(feedback_data)
                 
                 # Catatan: Write ke CSV dinonaktifkan untuk Streamlit Cloud
                 # BASE_DIR = Path(__file__).resolve().parent.parent
