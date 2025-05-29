@@ -1,6 +1,8 @@
 # GoldSight: Navigasi Cerdas Investasi Emas
 ## LAI25-SM048
 ### Anggota Tim
+![image](https://github.com/user-attachments/assets/ece0cda1-75ef-4251-b5cb-dca032e11e11)
+
 * A200YBF237 – Johanadi Santoso – Universitas Diponegoro - [Aktif]
 * A327YBF437 – Riyan Zaenal Arifin  – Universitas Teknologi Yogyakarta - [Aktif]
 * A463YBM456 – Shendi Teuku Maulana Efendi – Universitas PGRI Madiun - [Aktif]
