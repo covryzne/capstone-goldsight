@@ -1,4 +1,11 @@
 # GoldSight: Navigasi Cerdas Investasi Emas
+## LAI25-SM048
+### Anggota Tim
+* A200YBF237 – Johanadi Santoso – Universitas Diponegoro - [Aktif]
+* A327YBF437 – Riyan Zaenal Arifin  – Universitas Teknologi Yogyakarta - [Aktif]
+* A463YBM456 – Shendi Teuku Maulana Efendi – Universitas PGRI Madiun - [Aktif]
+* A278XAM502 – Wulandari – Universitas Negeri Makassar - [Aktif]
+---
 
 **GoldSight** adalah aplikasi web buat investor yang pengen paham tren harga emas dan bikin keputusan cerdas di tengah pasar yang naik-turun. Pake model *Deep Learning* **GRU (Gated Recurrent Unit)** dan data harga emas dari tahun 2000, GoldSight kasih prediksi harga yang akurat, visualisasi tren pasar, sama wawasan edukasi biar lo bisa investasi dengan percaya diri.
 
