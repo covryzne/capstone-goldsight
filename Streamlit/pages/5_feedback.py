@@ -41,22 +41,37 @@ def main():
 
         if submit:
             if feedback.strip():
-                # Simpan feedback ke file
-                BASE_DIR = Path(__file__).resolve().parent.parent.parent
-                feedback_path = BASE_DIR / 'Dataset' / 'feedback.csv'
+                # Simpan feedback ke session state untuk tampilan
+                if "feedback_list" not in st.session_state:
+                    st.session_state.feedback_list = []
                 feedback_data = {
-                    'Timestamp': [datetime.now().strftime('%Y-%m-%d %H:%M:%S')],
-                    'User': [st.session_state.user_name],
-                    'Feedback': [feedback.strip()]
+                    'Timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                    'User': st.session_state.user_name,
+                    'Feedback': feedback.strip()
                 }
-                feedback_df = pd.DataFrame(feedback_data)
-                if os.path.exists(feedback_path):
-                    feedback_df.to_csv(feedback_path, mode='a', header=False, index=False)
-                else:
-                    feedback_df.to_csv(feedback_path, index=False)
+                st.session_state.feedback_list.append(feedback_data)
+                
+                # Tampilin feedback di UI
                 st.success("Terima kasih atas umpan balik Anda!")
+                st.write("**Feedback Anda:**")
+                st.json(feedback_data)
+                
+                # Catatan: Write ke CSV dinonaktifkan untuk Streamlit Cloud
+                # BASE_DIR = Path(__file__).resolve().parent.parent
+                # feedback_path = BASE_DIR / 'Dataset' / 'feedback.csv'
+                # feedback_df = pd.DataFrame([feedback_data])
+                # if os.path.exists(feedback_path):
+                #     feedback_df.to_csv(feedback_path, mode='a', header=False, index=False)
+                # else:
+                #     feedback_df.to_csv(feedback_path, index=False)
             else:
                 st.warning("Feedback tidak boleh kosong!")
+
+    # Tampilin semua feedback yang tersimpan di session
+    if "feedback_list" in st.session_state and st.session_state.feedback_list:
+        st.write("### Riwayat Feedback")
+        feedback_df = pd.DataFrame(st.session_state.feedback_list)
+        st.dataframe(feedback_df)
 
 if __name__ == "__main__":
     main()
