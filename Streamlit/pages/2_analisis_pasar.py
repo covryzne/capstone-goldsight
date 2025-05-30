@@ -3,6 +3,9 @@ import pandas as pd
 import plotly.express as px
 import os
 from pathlib import Path
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+
 
 # Inisialisasi session state
 if "user_name" not in st.session_state:
@@ -115,9 +118,6 @@ def main():
         # Word Cloud Headlines Berita Logam Mulia
         st.subheader("Word Cloud Headlines Berita Logam Mulia")
         try:
-            from wordcloud import WordCloud
-            import matplotlib.pyplot as plt
-
             if 'headlines' in filtered_df.columns:
                 text = ' '.join(filtered_df['headlines'].dropna().astype(str))
                 if text.strip():
