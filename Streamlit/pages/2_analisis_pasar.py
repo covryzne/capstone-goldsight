@@ -112,6 +112,30 @@ def main():
                              y='volume', title="Volume Perdagangan per Hari")
         st.plotly_chart(fig_volume, use_container_width=True)
 
+        # Word Cloud Headlines Berita Logam Mulia
+        st.subheader("Word Cloud Headlines Berita Logam Mulia")
+        try:
+            from wordcloud import WordCloud
+            import matplotlib.pyplot as plt
+
+            if 'headlines' in filtered_df.columns:
+                text = ' '.join(filtered_df['headlines'].dropna().astype(str))
+                if text.strip():
+                    wordcloud = WordCloud(
+                        width=1000, height=500, background_color='white').generate(text)
+                    fig_wc, ax = plt.subplots(figsize=(15, 6))
+                    ax.imshow(wordcloud, interpolation='bilinear')
+                    ax.axis('off')
+                    st.pyplot(fig_wc)
+                else:
+                    st.info(
+                        "Tidak ada data headlines untuk ditampilkan pada Word Cloud.")
+            else:
+                st.info("Kolom 'headlines' tidak ditemukan di dataset.")
+        except ImportError:
+            st.warning(
+                "Modul wordcloud atau matplotlib belum terinstal. Silakan install dengan 'pip install wordcloud matplotlib'.")
+
     except Exception as e:
         st.error(f"Error memuat data: {str(e)}")
         st.write(f"Silakan cek file CSV di {data_path}")
