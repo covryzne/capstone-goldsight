@@ -89,7 +89,7 @@ def main():
         # Grafik harga
         st.subheader("Tren Harga Emas (Close)")
         fig = px.line(filtered_df, x=timestamp_col, y='close',
-                      title="Harga Emas (Close) per Hari")
+                      title="Harga Emas per Hari (USD)")
         st.plotly_chart(fig, use_container_width=True)
 
         # Grafik volume
