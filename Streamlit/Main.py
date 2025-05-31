@@ -105,7 +105,7 @@ Dengan model GRU dan data historis sejak 2000, kami menyediakan prediksi akurat 
     """)
 
     # Visual mini: Tren harga 30 hari terakhir
-    st.markdown("### Tren Harga Emas Terkini")
+    st.markdown("### Tren Harga Emas Terkini (USD)")
     BASE_DIR = Path(__file__).resolve().parent.parent
     data_path = BASE_DIR / 'Dataset' / 'final_gold_data.csv'
     try:

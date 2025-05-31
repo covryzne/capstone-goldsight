@@ -44,8 +44,8 @@ def main():
 
     # Load model dan scaler
     BASE_DIR = Path(__file__).resolve().parent.parent.parent
-    model_path = BASE_DIR / 'Model' / 'best_model_gru_5th.h5'
-    scaler_path = BASE_DIR / 'Model' / 'scaler_close_gru_5th.pkl'
+    model_path = BASE_DIR / 'Model' / 'best_model_gru.h5'
+    scaler_path = BASE_DIR / 'Model' / 'scaler_close_gru.pkl'
     data_path = BASE_DIR / 'Dataset' / 'final_gold_data.csv'
 
     try:

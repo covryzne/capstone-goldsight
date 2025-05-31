@@ -25,6 +25,7 @@ if st.session_state.user_name is None:
                 unsafe_allow_html=True)
     st.stop()
 
+
 def renderSidebar():
     with st.sidebar:
         if st.button("Logout"):
@@ -34,13 +35,14 @@ def renderSidebar():
             st.query_params["page"] = "login"
             st.rerun()
 
+
 def main():
     # Render sidebar
     renderSidebar()
 
     st.title("📊 Analisis Pasar & Wawasan Historis")
     st.write(
-        f"Selamat datang, {st.session_state.user_name}! Eksplorasi tren harga emas dan wawasan berbasis data historis sejak 2000.")
+        f"Selamat datang, {st.session_state.user_name}! Eksplorasi tren harga emas dan wawasan berbasis data historis pasar harian dan headlines utama The Wall Street Journal (WSJ) sejak tahun 2000.")
 
     # Load dataset
     BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -86,12 +88,12 @@ def main():
 
         # Grafik harga
         st.subheader("Tren Harga Emas (Close)")
-        fig = px.line(filtered_df, x=timestamp_col, y='close',
+        fig = px.line(filtered_df, x=timestamp_col, y='Close (USD)',
                       title="Harga Emas (Close) per Hari")
         st.plotly_chart(fig, use_container_width=True)
 
         # Grafik volume
-        st.subheader("Volume Perdagangan")
+        st.subheader("Volume Perdagangan Emas Berjangka")
         fig_volume = px.line(filtered_df, x=timestamp_col,
                              y='volume', title="Volume Perdagangan per Hari")
         st.plotly_chart(fig_volume, use_container_width=True)
@@ -126,8 +128,9 @@ def main():
                 with col1:
                     fig_sent, ax = plt.subplots(figsize=(5, 4))
                     ax.pie(gold_sent.values, labels=gold_sent.index, autopct='%1.1f%%', startangle=140,
-                        colors=['#66b3ff', '#99ff99', '#ff9999'])
-                    ax.set_title(f"Sentimen Berita Emas ({year_range[0]} - {year_range[1]})")
+                           colors=['#66b3ff', '#99ff99', '#ff9999'])
+                    ax.set_title(
+                        f"Sentimen Berita Emas ({year_range[0]} - {year_range[1]})")
                     plt.tight_layout()
                     st.pyplot(fig_sent, use_container_width=False)
             else:
@@ -138,6 +141,7 @@ def main():
     except Exception as e:
         st.error(f"Error memuat data: {str(e)}")
         st.write(f"Silakan cek file CSV di {data_path}")
+
 
 if __name__ == "__main__":
     main()
