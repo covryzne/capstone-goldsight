@@ -71,7 +71,7 @@ def main():
         
         df = pd.read_csv(
             data_path,
-            delimiter=';',
+            delimiter=',',
             encoding='utf-8',
             on_bad_lines='skip'
         )

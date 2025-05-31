@@ -115,7 +115,7 @@ Dengan model GRU dan data historis sejak 2000, kami menyediakan prediksi akurat 
         
         df = pd.read_csv(
             data_path,
-            delimiter=';',
+            delimiter=',',
             encoding='utf-8',
             on_bad_lines='skip'
         )
