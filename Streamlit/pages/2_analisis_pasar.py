@@ -85,29 +85,6 @@ def main():
                       title="Harga Emas (Close) per Hari")
         st.plotly_chart(fig, use_container_width=True)
 
-        # Statistik sederhana
-        st.subheader("Statistik Harga (USD)")
-        stats_df = pd.DataFrame({
-            'Metrik': ['Harga Rata-rata', 'Volatilitas (Std)'],
-            'Nilai': [filtered_df['close'].mean(), filtered_df['close'].std()]
-        })
-        fig_stats = px.bar(
-            stats_df,
-            x='Metrik',
-            y='Nilai',
-            title="Statistik Harga Emas",
-            text_auto='.2f',
-            color='Metrik',
-            color_discrete_sequence=['#1f77b4', '#ff7f0e'],
-            labels={'Nilai': 'Harga (USD)'}
-        )
-        fig_stats.update_traces(textposition='outside')
-        fig_stats.update_layout(
-            yaxis_title="Harga (USD)",
-            xaxis_title="Metrik",
-            showlegend=False
-        )
-        st.plotly_chart(fig_stats, use_container_width=True)
 
         # Grafik volume
         st.subheader("Volume Perdagangan")
