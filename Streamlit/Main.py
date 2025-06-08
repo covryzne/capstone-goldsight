@@ -27,7 +27,9 @@ def set_png_as_page_bg(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Menggunakan fungsi di atas
-set_png_as_page_bg('./assets/image/background.png')
+BASE_DIR = Path(__file__).resolve().parent
+images_bg = BASE_DIR / 'assets' / 'image' / 'background.png'
+set_png_as_page_bg(images_bg)
 
 # Konfigurasi Halaman
 st.set_page_config(
