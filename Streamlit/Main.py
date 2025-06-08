@@ -5,38 +5,13 @@ import pandas as pd
 import base64
 import os
 
-# Fungsi untuk mendapatkan string base64 dari file gambar
-def get_base64_of_bin_file(bin_file):
-    with open(bin_file, 'rb') as f:
-        data = f.read()
-    return base64.b64encode(data).decode()
-
-# Fungsi untuk mengatur gambar lokal sebagai latar belakang halaman
-def set_png_as_page_bg(png_file):
-    bin_str = get_base64_of_bin_file(png_file)
-    page_bg_img = '''
-    <style>
-    .stApp {
-        background-image: url("data:image/png;base64,%s");
-        background-size: cover;
-        opacity: 0.50;
-    }
-    </style>
-    ''' % bin_str
-    st.markdown(page_bg_img, unsafe_allow_html=True)
-
-# Konfigurasi Halaman (harus menjadi perintah Streamlit pertama)
+# Konfigurasi Halaman
 st.set_page_config(
     page_title="GoldSight",
     page_icon="🥇",
     layout="wide",
     initial_sidebar_state="expanded"
 )
-
-# Mengatur latar belakang setelah set_page_config
-BASE_DIR = Path(__file__).resolve().parent
-images_bg = BASE_DIR / 'assets' / 'image' / 'background.png'
-set_png_as_page_bg(images_bg)
 
 # Inisialisasi Session State
 if "user_name" not in st.session_state:
