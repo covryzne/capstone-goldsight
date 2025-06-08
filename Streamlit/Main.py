@@ -16,28 +16,27 @@ def set_png_as_page_bg(png_file):
     bin_str = get_base64_of_bin_file(png_file)
     page_bg_img = '''
     <style>
-    body {
-    background-image: url("data:image/png;base64,%s");
-    background-size: cover;
-    opacity: 0.92;
+    .stApp {
+        background-image: url("data:image/png;base64,%s");
+        background-size: cover;
+        opacity: 0.92;
     }
     </style>
     ''' % bin_str
-
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
-# Menggunakan fungsi di atas
-BASE_DIR = Path(__file__).resolve().parent
-images_bg = BASE_DIR / 'assets' / 'image' / 'background.png'
-set_png_as_page_bg(images_bg)
-
-# Konfigurasi Halaman
+# Konfigurasi Halaman (harus menjadi perintah Streamlit pertama)
 st.set_page_config(
     page_title="GoldSight",
     page_icon="🥇",
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
+# Mengatur latar belakang setelah set_page_config
+BASE_DIR = Path(__file__).resolve().parent
+images_bg = BASE_DIR / 'assets' / 'image' / 'background.png'
+set_png_as_page_bg(images_bg)
 
 # Inisialisasi Session State
 if "user_name" not in st.session_state:
