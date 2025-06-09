@@ -9,9 +9,13 @@
 * A278XAM502 – Wulandari – Universitas Negeri Makassar - [Aktif]
 ---
 
-**GoldSight** adalah aplikasi web buat investor yang pengen paham tren harga emas dan bikin keputusan cerdas di tengah pasar yang naik-turun. Pake model *Deep Learning* **GRU (Gated Recurrent Unit)** dan data harga emas dari tahun 2000, GoldSight kasih prediksi harga yang akurat, visualisasi tren pasar, sama wawasan edukasi biar lo bisa investasi dengan percaya diri. 
+**GoldSight** adalah aplikasi web buat investor yang pengen paham tren harga emas dan bikin keputusan cerdas di tengah pasar yang naik-turun. Pake model *Deep Learning* **GRU (Gated Recurrent Unit)** dan data harga emas dari tahun 2000, GoldSight kasih lo prediksi harga emas, visualisasi tren pasar, sama wawasan edukasi biar lo bisa investasi dengan percaya diri. 
 
-Proyek ini dibikin sama tim **Laskar AI** buat Capstone Project
+Hasil akhir proyek ini bisa lo akses pada halaman berikut.
+
+```
+https://goldsight-capstone.streamlit.app/
+```
 
 ## Fitur Keren
 - **Prediksi Harga Emas**: Ramal harga emas 1-90 hari ke depan pake model GRU.
@@ -108,5 +112,5 @@ Kami seneng banget kalau lo mau bantu! Fork repo ini, bikin pull request, atau k
 Proyek ini pake [MIT License](LICENSE).
 
 ---
-Dibikin sama **Laskar AI** – Dicoding: @shendyeff @johanadisantoso
+Dibikin sama **Laskar AI** – Dicoding: @shendyeff @johanadisantoso @riyan_zaenal_arifin @wulandari_vhfz
 
