@@ -9,7 +9,7 @@
 * A278XAM502 – Wulandari – Universitas Negeri Makassar - [Aktif]
 ---
 
-**GoldSight** adalah aplikasi web buat investor yang pengen paham tren harga emas dan bikin keputusan cerdas di tengah pasar yang naik-turun. Pake model *Deep Learning* **GRU (Gated Recurrent Unit)** dan data harga emas dari tahun 2000, GoldSight kasih prediksi harga yang akurat, visualisasi tren pasar, sama wawasan edukasi biar lo bisa investasi dengan percaya diri.
+**GoldSight** adalah aplikasi web buat investor yang pengen paham tren harga emas dan bikin keputusan cerdas di tengah pasar yang naik-turun. Pake model *Deep Learning* **GRU (Gated Recurrent Unit)** dan data harga emas dari tahun 2000, GoldSight kasih prediksi harga yang akurat, visualisasi tren pasar, sama wawasan edukasi biar lo bisa investasi dengan percaya diri. 
 
 Proyek ini dibikin sama tim **Laskar AI** buat Capstone Project
 
@@ -31,7 +31,7 @@ Proyek ini dibikin sama tim **Laskar AI** buat Capstone Project
 - Python 3.10 atau lebih baru
 - Dependensi di `requirements.txt`
 - File dataset: `final_gold_data.csv`
-- File model: `best_model_gru_5th.h5` dan `scaler_close_gru_5th.pkl`
+- File model: `best_model_gru.h5` dan `scaler_close_gru.pkl`
 
 ## Cara Install
 1. Clone repo ini:
@@ -50,8 +50,8 @@ Proyek ini dibikin sama tim **Laskar AI** buat Capstone Project
    ```
 4. Pastiin file ini ada di tempatnya:
    - `Dataset/final_gold_data.csv`
-   - `Model/best_model_gru_5th.h5`
-   - `Model/scaler_close_gru_5th.pkl`
+   - `Model/best_model_gru.h5`
+   - `Model/scaler_close_gru.pkl`
 
 ## Cara Jalanin
 1. Masuk ke folder `capstone-goldsight`.
@@ -75,8 +75,8 @@ capstone-goldsight/
 │   ├── [Laskar Ai] Pakta Integritas LAI25-SM048.docx
 │   └── [Laskar Ai] Pakta Integritas LAI25-SM048.pdf
 ├── Model/
-│   ├── best_model_gru_5th.h5     # Model GRU buat prediksi
-│   └── scaler_close_gru_5th.pkl  # Scaler buat preprocessing
+│   ├── best_model_gru.h5     # Model GRU buat prediksi
+│   └── scaler_close_gru.pkl  # Scaler buat preprocessing
 ├── Notebook/
 │   └── notebook.ipynb             # Notebook buat olah data
 ├── Streamlit/
@@ -96,12 +96,6 @@ capstone-goldsight/
 
 ## Dataset
 Data harga emas (`final_gold_data.csv`) diambil dari [Kaggle: Precious Metals History Since 2000](https://www.kaggle.com/datasets/romanfonel/precious-metals-history-since-2000-with-news).
-
-## Tim Keren
-- **Johanadi Santoso** – Universitas Diponegoro
-- **Riyan Zaenal Arifin** – Universitas Teknologi Yogyakarta
-- **Shendi Teuku Maulana Efendi** – Universitas PGRI Madiun
-- **Wulandari** – Universitas Negeri Makassar
 
 ## Catatan Penting
 - Prediksi harga emas cuma buat jangka pendek dan bisa dipengaruhi gejolak pasar. Jadi, pake sebagai referensi aja, bukan pengganti saran keuangan pro.
