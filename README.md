@@ -12,8 +12,7 @@
 
 **GoldSight** adalah platform berbasis web yang dirancang untuk mempermudah investor dalam memahami dan memprediksi pergerakan harga emas. Dengan mengintegrasikan teknologi **Deep Learning** (GRU) dan analisis visual berbasis data historis sejak tahun 2000, GoldSight hadir sebagai asisten digital yang membantu pengguna membuat keputusan investasi yang lebih bijak dan berbasis data.
 
-🔗 **Akses Aplikasi**
-👉 [goldsight-capstone.streamlit.app](https://goldsight-capstone.streamlit.app/)
+🔗 **Akses Aplikasi:** [goldsight-capstone.streamlit.app](https://goldsight-capstone.streamlit.app/)
 ---
 
 ## 💡 Fitur Unggulan
