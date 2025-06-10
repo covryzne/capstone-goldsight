@@ -1,5 +1,5 @@
-# GoldSight: Navigasi Cerdas Investasi Emas
-## LAI25-SM048
+# 🌟 GoldSight: Navigasi Cerdas Investasi Emas
+## 📌 ID Grup Capstone LAI25-SM048
 ### Anggota Tim
 ![image](https://github.com/user-attachments/assets/ece0cda1-75ef-4251-b5cb-dca032e11e11)
 
@@ -8,65 +8,101 @@
 * A463YBM456 – Shendi Teuku Maulana Efendi – Universitas PGRI Madiun - [Aktif]
 * A278XAM502 – Wulandari – Universitas Negeri Makassar - [Aktif]
 ---
+## 🚀 Tentang Proyek
 
-**GoldSight** adalah aplikasi web buat investor yang pengen paham tren harga emas dan bikin keputusan cerdas di tengah pasar yang naik-turun. Pake model *Deep Learning* **GRU (Gated Recurrent Unit)** dan data harga emas dari tahun 2000, GoldSight kasih lo prediksi harga emas, visualisasi tren pasar, sama wawasan edukasi biar lo bisa investasi dengan percaya diri. 
+**GoldSight** adalah platform berbasis web yang dirancang untuk mempermudah investor dalam memahami dan memprediksi pergerakan harga emas. Dengan mengintegrasikan teknologi **Deep Learning** (GRU) dan analisis visual berbasis data historis sejak tahun 2000, GoldSight hadir sebagai asisten digital yang membantu pengguna membuat keputusan investasi yang lebih bijak dan berbasis data.
 
-Hasil akhir proyek ini bisa lo akses pada halaman berikut.
+🔗 **Akses Aplikasi**
+👉 [goldsight-capstone.streamlit.app](https://goldsight-capstone.streamlit.app/)
+---
 
-```
-https://goldsight-capstone.streamlit.app/
-```
+## 💡 Fitur Unggulan
 
-## Fitur Keren
-- **Prediksi Harga Emas**: Ramal harga emas 1-90 hari ke depan pake model GRU.
-- **Analisis Pasar**: Grafik interaktif buat lihat tren harga dan volume perdagangan emas sejak 2000.
-- **Dashboard Gampang**: Antarmuka yang gampang dipake buat eksplor data dan prediksi.
-- **Edukasi & FAQ**: Info soal investasi emas dan cara kerja model prediksi.
-- **Feedback**: Feedback.
+| Fitur                       | Deskripsi                                                                           |
+| --------------------------- | ----------------------------------------------------------------------------------- |
+| 🔮 **Prediksi Harga**       | Model GRU memprediksi harga emas hingga 90 hari ke depan.                           |
+| 📈 **Analisis Pasar**       | Visualisasi interaktif untuk mengeksplorasi tren harga dan volume sejak tahun 2000. |
+| 🧠 **Edukasi & FAQ**        | Penjelasan mudah dipahami tentang konsep investasi emas dan algoritma prediksi.     |
+| 📊 **Dashboard Responsif**  | Antarmuka intuitif berbasis Streamlit, siap pakai di berbagai perangkat.            |
+| ✉️ **Formulir Umpan Balik** | Pengguna dapat menyampaikan saran dan evaluasi langsung di aplikasi.                |
 
-## Teknologi yang Dipake
-- **Streamlit**: Buat bikin aplikasi web yang interaktif.
-- **Pandas & Plotly**: Buat olah data dan bikin grafik yang kece.
-- **TensorFlow**: Buat model *Deep Learning* GRU.
-- **Joblib**: Buat nyimpen dan load scaler model.
-- **Python**: Bahasa utama yang ngejalanin semuanya.
+---
 
-## Apa yang Lo Butuhin
-- Python 3.10 atau lebih baru
-- Dependensi di `requirements.txt`
-- File dataset: `final_gold_data.csv`
-- File model: `best_model_gru.h5` dan `scaler_close_gru.pkl`
+## 🛠️ Teknologi yang Digunakan
 
-## Cara Install
-1. Clone repo ini:
+* **Python 3.10+** – Bahasa pemrograman utama
+* **TensorFlow** – Arsitektur model GRU untuk prediksi deret waktu
+* **Streamlit** – Framework antarmuka web interaktif
+* **Pandas & Plotly** – Analisis dan visualisasi data
+* **Joblib** – Serialisasi model dan preprocessing
+
+---
+
+## ⚙️ Persyaratan Sistem
+
+* Python 3.10 atau lebih baru
+* File dependensi: `requirements.txt`
+* Dataset: `Dataset/final_gold_data.csv`
+* Model:
+
+  * `Model/best_model_gru.h5`
+  * `Model/scaler_close_gru.pkl`
+
+---
+
+## 🔧 Cara Instalasi
+
+1. **Clone repositori**
+
    ```bash
    git clone https://github.com/covryzne/capstone-goldsight.git
    cd capstone-goldsight
    ```
-2. Bikin virtual environment (conda):
+
+2. **Buat environment**
+
    ```bash
    conda create -n capstone python=3.10
    conda activate capstone
    ```
-3. Install dependensi:
+
+3. **Install dependensi**
+
    ```bash
    pip install -r requirements.txt
    ```
-4. Pastiin file ini ada di tempatnya:
-   - `Dataset/final_gold_data.csv`
-   - `Model/best_model_gru.h5`
-   - `Model/scaler_close_gru.pkl`
 
-## Cara Jalanin
-1. Masuk ke folder `capstone-goldsight`.
-2. Jalanin Streamlit:
+4. **Pastikan file berikut tersedia:**
+
+   * `Dataset/final_gold_data.csv`
+   * `Model/best_model_gru.h5`
+   * `Model/scaler_close_gru.pkl`
+
+---
+
+## ▶️ Cara Menjalankan Aplikasi
+
+1. Navigasikan ke direktori proyek:
+
+   ```bash
+   cd capstone-goldsight
+   ```
+
+2. Jalankan aplikasi menggunakan **Streamlit**:
+
    ```bash
    streamlit run Streamlit/app.py
    ```
-3. Buka browser di `http://localhost:8501`.
-4. Masukin nama lo di pop-up login buat masuk ke dashboard.
 
-## Struktur Folder
+3. Setelah aplikasi berjalan, buka browser dan akses:
+
+   ```
+   http://localhost:8501
+   ```
+
+4. Masukkan nama Anda pada pop-up login untuk mengakses dashboard utama.
+
+## 🗂️ Struktur Folder
 ```
 capstone-goldsight/
 ├── Dataset/
@@ -79,7 +115,7 @@ capstone-goldsight/
 │   ├── [Laskar Ai] Pakta Integritas LAI25-SM048.docx
 │   └── [Laskar Ai] Pakta Integritas LAI25-SM048.pdf
 ├── Model/
-│   ├── best_model_gru.h5     # Model GRU buat prediksi
+│   ├── best_model_gru.h5     # Model GRU terbaik untuk prediksi
 │   └── scaler_close_gru.pkl  # Scaler buat preprocessing
 ├── Notebook/
 │   └── notebook.ipynb             # Notebook buat olah data
@@ -98,19 +134,20 @@ capstone-goldsight/
 └── requirements.txt              # Daftar dependensi
 ```
 
-## Dataset
+## 🗃️ Dataset
 Data harga emas (`final_gold_data.csv`) diambil dari [Kaggle: Precious Metals History Since 2000](https://www.kaggle.com/datasets/romanfonel/precious-metals-history-since-2000-with-news).
 
-## Catatan Penting
-- Prediksi harga emas cuma buat jangka pendek dan bisa dipengaruhi gejolak pasar. Jadi, pake sebagai referensi aja, bukan pengganti saran keuangan pro.
-- Aplikasi ini prototipe, bisa dikembangin lagi, misalnya nambahin integrasi berita pasar atau model yang lebih canggih.
+## ⚠️ Catatan Penting
+- Prediksi harga emas cuma buat jangka pendek dan bisa dipengaruhi gejolak pasar. Jadi, gunakan sebagai referensi aja, bukan pengganti saran keuangan pro.
+- Aplikasi ini adalah prototipe yang masih dapat dikembangkan lebih lanjut, seperti integrasi berita pasar dan peningkatan model.
 
-## Mau Kontribusi?
-Kami seneng banget kalau lo mau bantu! Fork repo ini, bikin pull request, atau kasih saran lewat issue.
+## 🤝 Mau Kontribusi?
+Terbuka untuk kontribusi!
+Silakan fork, buat pull request, atau kirim masukan lewat issue.
 
 ## Lisensi
 Proyek ini pake [MIT License](LICENSE).
 
 ---
-Dibikin sama **Laskar AI** – Dicoding: @shendyeff @johanadisantoso @riyan_zaenal_arifin @wulandari_vhfz
+Dibuat dengan dedikasi **Laskar AI** – Dicoding: @shendyeff @johanadisantoso @riyan_zaenal_arifin @wulandari_vhfz
 
