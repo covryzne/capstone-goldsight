@@ -160,11 +160,11 @@ def main():
                 if st.button("7 Hari"):
                     st.session_state.horizon = 7
             with col3:
-                if st.button("60 Hari"):
-                    st.session_state.horizon = 60
+                if st.button("14 Hari"):
+                    st.session_state.horizon = 14
             with col4:
-                if st.button("90 Hari"):
-                    st.session_state.horizon = 90
+                if st.button("21 Hari"):
+                    st.session_state.horizon = 21
         else:
             st.write(f"Tanggal terakhir di dataset: {last_date.strftime('%Y-%m-%d')}")
             selected_date = st.date_input("Pilih tanggal untuk prediksi:", 

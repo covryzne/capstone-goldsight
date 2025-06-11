@@ -68,10 +68,10 @@ def main():
                 st.warning("Feedback tidak boleh kosong!")
 
     # Tampilin semua feedback yang tersimpan di session
-    if "feedback_list" in st.session_state and st.session_state.feedback_list:
-        st.write("### Riwayat Feedback")
-        feedback_df = pd.DataFrame(st.session_state.feedback_list)
-        st.dataframe(feedback_df)
+    # if "feedback_list" in st.session_state and st.session_state.feedback_list:
+    #     st.write("### Riwayat Feedback")
+    #     feedback_df = pd.DataFrame(st.session_state.feedback_list)
+    #     st.dataframe(feedback_df)
 
 if __name__ == "__main__":
     main()
