@@ -104,33 +104,38 @@
 ## 🗂️ Struktur Folder
 ```
 capstone-goldsight/
-├── Dataset/
-│   └── final_gold_data.csv       # Data harga emas
-├── Dokumen/
-│   ├── Project Brief - LAI25-SM048.docx
-│   ├── Project Plan - LAI25-SM048.docx
-│   ├── Project Plan - LAI25-SM048.pdf
-│   ├── Schedule Progress.xlsx
-│   ├── [Laskar Ai] Pakta Integritas LAI25-SM048.docx
-│   └── [Laskar Ai] Pakta Integritas LAI25-SM048.pdf
-├── Model/
-│   ├── best_model_gru.h5     # Model GRU terbaik untuk prediksi
-│   └── scaler_close_gru.pkl  # Scaler buat preprocessing
-├── Notebook/
-│   └── notebook.ipynb             # Notebook buat olah data
-├── Streamlit/
-│   ├── app.py                    # Landing page & dashboard
-│   ├── assets/
-│   │   └── image/
-│   │       └── header.png        # Gambar header landing page
-│   └── pages/
-│       ├── 2_analisis_pasar.py   # Tren dan statistik pasar
-│       ├── 3_prediksi_harga.py   # Prediksi harga emas
-│       ├── 4_edukasi_faq.py      # Edukasi dan FAQ
-│       └── 5_feedback.py         # Feedback
-├── .gitignore                    # File yang di-skip git
-├── README.md                     # Dokumentasi proyek ini
-└── requirements.txt              # Daftar dependensi
+|   .gitignore                # File untuk mengecualikan file/folder tertentu dari Git
+|   README.md                 # Dokumentasi utama proyek
+|   requirements.txt          # Daftar pustaka Python yang dibutuhkan
+|
++---.devcontainer
+|       devcontainer.json     # Konfigurasi container untuk VS Code Dev Containers
+|
++---Dataset
+|       final_gold_data.csv   # Dataset utama yang digunakan untuk pelatihan dan analisis
+|       Link Dataset.txt      # Tautan sumber dataset
+|
++---Model
+|       best_model_gru.h5     # Model GRU terbaik yang sudah dilatih (format HDF5)
+|       scaler_close_gru.pkl  # Skaler data harga penutupan (pickle)
+|
++---Notebook
+|       eksperimen.txt        # Catatan eksperimen atau hasil percobaan
+|       notebook.ipynb        # Notebook Jupyter untuk eksplorasi dan pelatihan model
+|
+\---Streamlit
+    |   Main.py                      # Aplikasi utama Streamlit
+    |   requirements.txt             # Pustaka yang dibutuhkan untuk menjalankan Streamlit
+    |
+    +---assets
+    |   \---image
+    |           header.png           # Gambar header yang digunakan dalam aplikasi
+    |
+    \---pages
+            2_Analisis_Pasar.py      # Halaman untuk analisis pasar emas
+            3_Prediksi_Harga.py      # Halaman untuk prediksi harga emas
+            4_Edukasi_FAQ.py         # Halaman edukasi dan pertanyaan umum
+            5_Feedback.py            # Halaman umpan balik pengguna
 ```
 
 ## 🗃️ Dataset
@@ -139,10 +144,6 @@ Data harga emas (`final_gold_data.csv`) diambil dari [Kaggle: Precious Metals Hi
 ## ⚠️ Catatan Penting
 - Prediksi harga emas cuma buat jangka pendek dan bisa dipengaruhi gejolak pasar. Jadi, gunakan sebagai referensi aja, bukan pengganti saran keuangan pro.
 - Aplikasi ini adalah prototipe yang masih dapat dikembangkan lebih lanjut, seperti integrasi berita pasar dan peningkatan model.
-
-## 🤝 Mau Kontribusi?
-Terbuka untuk kontribusi!
-Silakan fork, buat pull request, atau kirim masukan lewat issue.
 
 ## Lisensi
 Proyek ini pake [MIT License](LICENSE).
