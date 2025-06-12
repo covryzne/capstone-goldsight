@@ -101,12 +101,18 @@
 
 4. Masukkan nama Anda pada pop-up login untuk mengakses dashboard utama.
 
+## 🖥️ Demo Aplikasi
+
+👀 Lihat demo penggunaan GoldSight melalui video berikut:
+[ Video Demo – GoldSight](https://youtu.be/JRZK79Xvuws)
+
 ## 🗂️ Struktur Folder
 ```
 capstone-goldsight/
-|   .gitignore                # File untuk mengecualikan file/folder tertentu dari Git
-|   README.md                 # Dokumentasi utama proyek
-|   requirements.txt          # Daftar pustaka Python yang dibutuhkan
+├── .gitignore                  # File untuk mengecualikan file/folder tertentu dari Git
+├── README.md                   # Dokumentasi utama proyek
+├── Guide Book - GoldSight.pdf  # Panduan penggunaan dan dokumentasi tambahan proyek
+├── requirements.txt            # Daftar dependensi Python utama proyek
 |
 +---.devcontainer
 |       devcontainer.json     # Konfigurasi container untuk VS Code Dev Containers
